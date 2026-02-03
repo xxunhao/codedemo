@@ -17,8 +17,9 @@ if exist npm.cmd (
   echo Your environment has been set up for using Node.js !version!.
 )
 
-popd
+popd 
 endlocal
 
 rem If we're in the Node.js directory, change to the user's home dir.
 if "%CD%\"=="%~dp0" cd /d "%HOMEDRIVE%%HOMEPATH%"
+#this
